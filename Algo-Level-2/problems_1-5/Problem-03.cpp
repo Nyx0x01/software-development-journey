@@ -4,6 +4,8 @@
 
 using namespace std;
 
+enum enNumberType{Odd = 1, Even = 2};
+
 int ReadNumber() {
 	int Number;
 
@@ -13,19 +15,26 @@ int ReadNumber() {
 	return Number;
 }
 
-string CheckNumber(int Number) {
+enNumberType CheckNumberType(int Number) {
 	if (Number % 2 != 0) {
-		return "Odd";
+		return enNumberType::Odd;
 	}
-	return "Even";
+	return enNumberType::Even;
 }
 
-void PrintResult(string Result) {
-	cout << "The number you entered is: " << Result << endl;
+void PrintResult(enNumberType Result) {
+	if (Result == enNumberType::Even) {
+
+	cout << "The number you entered is Even\n" ;
+	}
+	else {
+		cout << "The number you entered is Odd\n";
+
+	}
 }
 int main()
 {
-	PrintResult(CheckNumber(ReadNumber()));
+	PrintResult(CheckNumberType(ReadNumber()));
 	return 0;
 
 }

@@ -8,7 +8,7 @@ string ReadName() {
 	string name;
 
 	cout << "Enter your Name: \n";
-	cin >> name;
+	getline(cin, name);
 
 	return name;
 }

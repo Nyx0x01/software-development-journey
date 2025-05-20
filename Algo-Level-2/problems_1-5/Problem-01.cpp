@@ -5,12 +5,12 @@
 using namespace std;
 
 //Problem 01
-void PrintName() {
-	cout << "Hello i'm Nyx a software engineer <3 \n";
+void PrintName(string name) {
+	cout << "Hello i'm " << name << " a software engineer <3 \n";
 }
 int main()
 {
-	PrintName();
+	PrintName("Nyx");
 	return 0;
 
 }

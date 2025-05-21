@@ -21,7 +21,9 @@ stFullName ReadName(){
 }
 
 string GetFullName(stFullName name){
-	return name.FirstName + " " + name.LastName;
+	string FullName = "";
+	FullName = name.FirstName + " " + name.LastName;
+	return FullName;
 }
 
 void PrintName(string FullName) {

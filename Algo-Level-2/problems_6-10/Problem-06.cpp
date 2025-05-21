@@ -20,13 +20,17 @@ stFullName ReadName(){
 	return name;
 }
 
-void PrintName(stFullName name) {
-	cout << "Your full name is " << name.FirstName + " " + name.LastName << endl;
+string GetFullName(stFullName name){
+	return name.FirstName + " " + name.LastName;
+}
+
+void PrintName(string FullName) {
+	cout << "Your full name is " << FullName << endl;
 }
 int main()
 {
 	
-	PrintName(ReadName());
+	PrintName(GetFullName(ReadName()));
 	return 0;
 
 }

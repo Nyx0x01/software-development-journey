@@ -20,8 +20,11 @@ stFullName ReadName(){
 	return name;
 }
 
-string GetFullName(stFullName name){
+string GetFullName(stFullName name, bool Reversed){
 	string FullName = "";
+	if(Reversed)
+	FullName = name.LastName + " " + name.FirstName;
+	else
 	FullName = name.FirstName + " " + name.LastName;
 	return FullName;
 }
@@ -32,7 +35,7 @@ void PrintName(string FullName) {
 int main()
 {
 	
-	PrintName(GetFullName(ReadName()));
+	PrintName(GetFullName(ReadName(), true));
 	return 0;
 
 }

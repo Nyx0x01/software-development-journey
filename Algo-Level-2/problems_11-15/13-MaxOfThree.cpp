@@ -32,6 +32,8 @@ int MaxOf3Numbers(int num1, int num2, int num3) {
 		return num3;
 }
 
+}
+
 void PrintMax(int max) {
 	cout << "Max of 3 entered numbers is: " << max << endl;
 }

@@ -14,7 +14,8 @@ void ReadNumbers(float &A, float &B) {
 }
 
 float CalculateRectangleArea(float A, float B) {
-	return A * (sqrt(pow(B, 2) - pow(A, 2)));
+	float Area =  A * (sqrt(pow(B, 2) - pow(A, 2)));
+	return Area;
 }
 
 void PrintArea(float Area) {

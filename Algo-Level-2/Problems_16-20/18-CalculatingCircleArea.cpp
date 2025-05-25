@@ -4,12 +4,15 @@
 
 using namespace std;
 
-void ReadNumbers(float &num) {
-	cout << "Enter a number: \n";
-	cin >> num;
+float ReadRadius() {
+	float radius;
+	cout << "Enter the radius of your circle: \n";
+	cin >> radius;
+	return radius;
 }
 
-float CalculateCircleArea(float radius, float PI) {
+float CalculateCircleArea(float radius) {
+	const float PI = 3.141592653589793238;
 	float Area = PI * pow(radius, 2);
 	return Area;
 }
@@ -19,10 +22,7 @@ void PrintCircleArea(float Area) {
 }
 int main()
 {
-	float radius;
-	const float PI = 3.14;
-	ReadNumbers(radius);
-	PrintCircleArea(CalculateCircleArea(radius, PI));
+	PrintCircleArea(CalculateCircleArea(ReadRadius()));
 	return 0;
 }
 

@@ -1,3 +1,39 @@
+/*
+--------------------------------------------------
+🧠 Problem: Print Numbers from 1 to N
+📁 Level: 01 - Algorithms
+🎯 Topic: Loops / Basic I/O
+👩‍💻 Author: Nyx0x01
+--------------------------------------------------
+
+📌 Description:
+Write a program that prints numbers from 1 to N on separate lines.
+
+🧮 Input:
+A single integer N (1 ≤ N ≤ 10^6)
+
+📤 Output:
+Print numbers from 1 to N, each on a new line.
+
+🔁 Example:
+Input: 5
+Output:
+1
+2
+3
+4
+5
+
+🧩 Approach:
+- Use a simple for loop from 1 to N
+- Print each number
+
+🧪 Test Cases:
+Input: 3 → Output: 1 2 3
+Input: 1 → Output: 1
+
+--------------------------------------------------
+*/
 #include <iostream>
 #include <cmath>
 #include <string>

@@ -1,7 +1,7 @@
 /*
 --------------------------------------------------
 🧠 Problem: Print Numbers from 1 to N
-📁 Level: 01 - Algorithms
+📁 Level: 02 - Algorithms
 🎯 Topic: Loops / Basic I/O
 👩‍💻 Author: Nyx0x01
 --------------------------------------------------

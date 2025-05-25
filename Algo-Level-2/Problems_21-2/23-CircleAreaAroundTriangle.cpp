@@ -19,8 +19,8 @@ float CircleAreaAroundArbitraryTriangle(float A, float B, float C) {
     const float PI = 3.141592653589793238;
 
     float P = (A + B + C) / 2;
-
-    float Area = PI * pow((A * B * C) / (4 * sqrt(P * (P - A) * (P - B) * (P - C))),2);
+    float T = (A * B * C) / (4 * sqrt(P * (P - A) * (P - B) * (P - C)));
+    float Area = PI * pow(T,2);
 
     return Area;
 }
@@ -33,6 +33,7 @@ int main()
     float A, B, C;
     ReadTriangleInputs(A, B, C);
     PrintCircleArea(CircleAreaAroundArbitraryTriangle(A, B, C));
+    
     return 0;
 }
 

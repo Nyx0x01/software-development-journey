@@ -21,14 +21,15 @@ float CalculateRemainder(float Bill, float Cash) {
 
 void PrintRemainder(float Remainder, float Bill, float Cash) {
 	cout << "Total bill = " << Bill << ", Total cash paid = " << Cash << endl;
+	cout << "******************************************** \n";
 	cout << "Remainder = " << Remainder << endl;
 }
 int main()
 {
 	float TotalBill, CashPaid;
 
-	TotalBill = ReadNumber("Enter bill amount:");
-	CashPaid = ReadNumber("Enter amount of cash paid:");
+	TotalBill = ReadPositiveNumber("Enter bill amount:");
+	CashPaid = ReadPositiveNumber("Enter amount of cash paid:");
 
 	PrintRemainder(CalculateRemainder(TotalBill, CashPaid), TotalBill, CashPaid);
 

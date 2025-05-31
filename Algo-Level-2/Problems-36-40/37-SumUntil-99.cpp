@@ -13,25 +13,25 @@ float ReadNumber(string Message) {
 
 float SumNumbers() {
 
-	float sum = 0, Number = 0;
-	int count = 0;
+	int sum = 0, Number = 0, count = 1;
 
-	Number = ReadNumber("Enter a number \n");
-	while (Number != -99) {
+	Number = ReadNumber("Enter Number " + to_string(count) + "\n");
+	do {
+		if (Number == -99) {
+			break;
+		}
 		sum += Number;
 		count++;
-		Number = ReadNumber("Enter a number or -99 to stop");
-	}
+		Number = ReadNumber("Enter Number " + to_string(count) + "\n");
+	} while (Number != -99);
 
 	return sum;
 }
 
-void PrintSum(float Sum) {
-	cout << "Sum of all entered numbers = " << Sum << endl;
-}
+
 int main()
 {
-	PrintSum(SumNumbers());
+	cout << "Result = " << SumNumbers() << endl;
 
 	return 0;
 }

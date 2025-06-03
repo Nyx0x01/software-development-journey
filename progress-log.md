@@ -10,3 +10,11 @@
 ## Week of May 21, 2025
 - ✅ Solved Problems Using Functional Programming
 - 🧠 Problem Solving in advanced way
+
+## Week of May 28, 2025
+- ✅ Solved Problems Using Functional Programming
+- 🧠 Problem Solving in advanced way
+
+  ## Week of June 4th, 2025
+- ✅ Solved Problems Additional More Advanced Problems
+- 🧠 Problem Solving Using Everything learnt

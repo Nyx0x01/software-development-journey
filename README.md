@@ -19,9 +19,10 @@ I use this repo to:
 | 01    | Foundations      | ✅ Done   |
 | 02    | Algorithms 1     | ✅ Done   |
 | 03    | C++ level 1      | ✅ Done   |
-| 04    | Algorithms 2     | 🛠️ In Progress |
-| 05    | Algorithms 3     | 🔜 Planned |
-
+| 04    | Algorithms 2     | ✅ Done |
+| 05    | Algorithms 3     | 🛠️ In Progress |
+| 06    | C++ level 2      | 🔜 Planned |
+| 07    | Algorithms 4     | 🔜 Planned |
 ---
 
 ## 🧩 How I Work

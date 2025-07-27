@@ -3,8 +3,6 @@
 #include <string>
 using namespace std;
 
-enum enPerfectNotPerfect{Perfect = 1, notPerfect = 2};
-
 int ReadPositiveNumber(string message) {
 	int Number;
 
@@ -16,22 +14,14 @@ int ReadPositiveNumber(string message) {
 	return Number;
 }
 
-int SumOfNumbers(int Num) {
-	int sum = 0;
+bool isPerfect(int Num) {
+	int Sum = 0;
 	for (int i = 1; i < Num; i++) {
 		if (Num % i == 0) {
-			sum += i;
+			Sum += i;
 		}
 	}
-	return sum;
-}
-
-
-enPerfectNotPerfect CheckPerfectNumber(int Num) {
-	if (SumOfNumbers(Num) == Num) {
-		return enPerfectNotPerfect::Perfect;
-	}
-	return enPerfectNotPerfect::notPerfect;
+	return Num == Sum;
 }
 
 void PrintPerfectNumbers(int Num) {

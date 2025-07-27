@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-enum enPrimeNotPrime{prime = 1,notPrime = 2};
+enum enPrimeNotPrime{Prime = 1, notPrime = 2};
 
 int ReadNumber(string message) {
 	int number;
@@ -17,21 +17,21 @@ int ReadNumber(string message) {
 }
 
 
-enPrimeNotPrime isPrime(int num) {
-	int M = num / 2;
+enPrimeNotPrime CheckPrime(int Num) {
+	int M = round(Num / 2);
 
 	for (int i = 2; i <= M; i++) {
-		if (num % i == 0) {
+		if (Num % i == 0) {
 			return enPrimeNotPrime::notPrime;
 		}
 	}
-	return enPrimeNotPrime::prime;
+	return enPrimeNotPrime::Prime;
 }
 
 void PrintPrimeNumbersFrom1ToN(int Num) {
-
+	cout << "Prime Numbers From 1 TO " << Num << " are: \n";
 	for (int i = 1; i <= Num; i++) {
-		if (isPrime(i) == enPrimeNotPrime::prime) {
+		if (CheckPrime(i) == enPrimeNotPrime::prime) {
 			cout << i << endl;
 		}
 		else {
@@ -43,6 +43,7 @@ void PrintPrimeNumbersFrom1ToN(int Num) {
 int main()
 {
 	PrintPrimeNumbersFrom1ToN(ReadNumber("Enter a pisitive number:"));
+
 	return 0;
 }
 

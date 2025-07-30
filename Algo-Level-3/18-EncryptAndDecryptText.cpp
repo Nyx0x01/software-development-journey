@@ -14,35 +14,34 @@ string ReadText() {
 	return txt;
 }
 
-string EncryptText(string txt) {
+string EncryptText(string txt,short key) {
 	string encrypt = "";
 	for (int i = 0; i <= txt.length(); i++) {
-		encrypt += txt[i] + 2;
+		encrypt += txt[i] + key;
 	}
 
 	return encrypt;
 }
 
-string DecryptText(string EncryptedText) {
+string DecryptText(string EncryptedText, short key) {
 	string decrypt = "";
 	for (int i = 0; i <= EncryptedText.length()-1; i++) {
-		decrypt += EncryptedText[i] - 2;
+		decrypt += EncryptedText[i] - key;
 	}
 	return decrypt;
 }
 
-void PrintResults(string OriginalText) {
+void PrintResults(string OriginalText, short key) {
 	string EncryptedText, DecryptedText;
-	EncryptedText = EncryptText(OriginalText);
-	DecryptedText = DecryptText(EncryptedText);
+	EncryptedText = EncryptText(OriginalText, key);
+	DecryptedText = DecryptText(EncryptedText, key);
 	cout << "Text Before Encryption: " << OriginalText << endl;
 	cout << "Text After Encryption: " << EncryptedText << endl;
 	cout << "Text After Dencryption: " << DecryptedText << endl;
 }
 int main()
 {
-	
-	PrintResults(ReadText());
-
+	const short key = 2;
+	PrintResults(ReadText(),key);
 	return 0;
 }
